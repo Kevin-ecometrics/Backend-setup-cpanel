@@ -56,12 +56,10 @@ my-app/
   "version": "1.0.0",
   "main": "dist/index.js",
   "scripts": {
-    "dev":   "bun run --watch src/index.ts",
+    "dev":   "bun run src/index.ts",
     "build": "bun build src/index.ts --format=cjs --outdir=dist",
-    "start": "node dist/index.js",
-    "typecheck": "npx tsc --noEmit"
-  },
-  "engines": { "node": ">=18" }
+    "start": "node dist/index.js"
+  }
 }
 ```
 
